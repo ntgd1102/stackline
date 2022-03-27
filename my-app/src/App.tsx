@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    fetch('stackline.json')
+    fetch('https://api.jsonbin.io/b/623fac5fa703bb67493518ce')
             .then((res) => res.json())
                   .then((json) => {
                       console.log({
