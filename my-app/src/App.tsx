@@ -1,8 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    fetch('stackline.json')
+            .then((res) => res.json())
+                  .then((json) => {
+                      console.log({
+                          items: json,
+                          DataisLoaded: true
+                      });
+                  })
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
