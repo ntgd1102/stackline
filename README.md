@@ -1,2 +1,2 @@
 # stackline
-# npm i & npm start to run the project locally
+# Please run 'npm i' & 'npm start' to run the project locally
