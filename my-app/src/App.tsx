@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import { useDispatch } from 'react-redux';
 import { getApiData } from './store/actions';
 import ProductInfoContainer from './containers/ProductInfoContainer';
+import ProductStatsTableContainer from "./containers/ProductStatsTableContainer";
 
 function App() {
   const dispatch = useDispatch();
@@ -18,7 +19,9 @@ function App() {
         <div className='product-info'>
           <ProductInfoContainer />
         </div>
-        <div className='product-stats-table' />
+        <div className='product-stats-table'>
+            <ProductStatsTableContainer />
+        </div>
       </div>
     </div>
   );
