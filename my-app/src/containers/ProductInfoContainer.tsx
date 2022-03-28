@@ -1,7 +1,14 @@
 import React from 'react';
-import { Card } from 'antd';
+import { useSelector } from 'react-redux';
+import { getProductTitle } from '../store/selectors';
 
 const ProductInfoContainer: React.FC = () => {
-    
-    return null;
+    const sdsd = useSelector(getProductTitle);
+    return (
+        <div>
+            {sdsd}
+        </div>
+    );
 }
+
+export default ProductInfoContainer
