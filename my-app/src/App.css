@@ -6,8 +6,7 @@
 
 .product-info {
   flex: 1;
-  height: 560px;
-  background-color: aqua;
+  min-height: 900px;
 }
 
 .product-stats-table {
